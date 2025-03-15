@@ -19,7 +19,7 @@ def preprocess_image(image):
     image = np.expand_dims(image, axis=0)  # Add batch dimension
     return image
 
-st.title("Pneumonia Detection from X-ray Images")
+st.title("PneuScan - Pneumonia Detection from X-ray Images")
 st.write("Upload an X-ray image to check for pneumonia.")
 
 uploaded_file = st.file_uploader("Choose an X-ray image", type=["jpg", "png", "jpeg"])
